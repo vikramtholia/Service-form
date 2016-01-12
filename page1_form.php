@@ -3,13 +3,13 @@ session_start(); // Session starts here.
 ?><!DOCTYPE HTML>
 <html>
  <head>
- <title>PHP Multi Page Form</title>
+ <title>For New User</title>
  <link rel="stylesheet" href="style.css" />
  </head>
  <body>
  <div class="container">
  <div class="main">
- <h2>PHP Multi Page Form</h2>
+ <h2>New User - Start here</h2>
  <span id="error">
  <!---- Initializing Session for errors --->
  <?php
@@ -21,11 +21,11 @@ session_start(); // Session starts here.
  </span>
  <form action="page2_form.php" method="post">
  <label>Full Name :<span>*</span></label>
- <input name="name" type="text" placeholder="Ex-James Anderson" required>
- <label>Email :<span>*</span></label>
- <input name="email" type="email" placeholder="Ex-anderson@gmail.com" required>
- <label>Contact :<span>*</span></label>
+ <input name="name" type="text" placeholder="Ex-Sachin Sharma" required>
+ <label>Mobile :<span>*</span></label>
  <input name="contact" type="text" placeholder="10-digit number" required>
+ <label>Email :<span>*</span></label>
+ <input name="email" type="email" placeholder="Ex-sachin@gmail.com" required>
  <label>Password :<span>*</span></label>
  <input name="password" type="Password" placeholder="*****" />
  <label>Re-enter Password :<span>*</span></label>
