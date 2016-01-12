@@ -4,7 +4,7 @@ session_start(); // Session starts here.
 <html>
  <head>
  <title>For New User</title>
- <link rel="stylesheet" href="style.css" />
+ <link rel="stylesheet" href="app/css/style.css" />
  </head>
  <body>
  <div class="container">
@@ -19,19 +19,19 @@ session_start(); // Session starts here.
  }
  ?>
  </span>
- <form action="page2_form.php" method="post">
+ <form action="page1_php.php" method="post">
  <label>Full Name :<span>*</span></label>
  <input name="name" type="text" placeholder="Ex-Sachin Sharma" required>
  <label>Mobile :<span>*</span></label>
  <input name="contact" type="text" placeholder="10-digit number" required>
- <p>We will verify your mobile number by sending OTP.</p>
+ <p>We will verify your mobile number by sending verification code by sms.</p>
  <label>Email :<span>*</span></label>
  <input name="email" type="email" placeholder="Ex-sachin@gmail.com" required>
- <p>We will send service status and details on this email address.</p>
+ <p>Important: We will send service status and details on this email address.</p>
  <label>Password :<span>*</span></label>
- <input name="password" type="Password" placeholder="*****" />
+ <input name="password" type="Password" placeholder="********" />
  <label>Re-enter Password :<span>*</span></label>
- <input name="confirm" type="password" placeholder="*****" >
+ <input name="confirm" type="password" placeholder="********" >
  <input type="reset" value="Reset" />
  <input type="submit" value="Next" />
  </form>
