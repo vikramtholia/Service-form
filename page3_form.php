@@ -40,26 +40,31 @@ session_start();
  ?>
  </span>
  <form action="page4_insertdata.php" method="post">
- <b>Complete Address :</b>
- <p>As of now we are active in </p>
+ <b>Address :</b>
+ <p>As of now we are active in some areas of Chandigarh, Mohali and Near IT park. We have take this decision to serve you better. Even if your area is not listed in drop down below, we will try to serve you. </p>
+ <label>Your Area :<span>*</span></label>
+ <select name="area">
+ <option value="">----Select----</options>
+ <option value="other" value="">My area is not listed </options>
+ <option value="tablet" value="">IT Park, Chandigarh </options>
+ <option value="tablet" value="">MDC sector 4, Panchkula </options>
+ <option value="tablet" value="">MDC sector 5, Panchkula </options>
+ <option value="tablet" value="">MDC sector 6, Panchkula </options>
+ <option value="tablet" value="">Sector 6, Panchkula </options>
+ <option value="tablet" value="">Sector 7, Panchkula </options>
+ <option value="tablet" value="">Sector 8, Panchkula </options>
+ <option value="tablet" value="">Sector 9, Panchkula </options>
+ <option value="tablet" value="">Sector 10, Panchkula </options>
+ </select>
  <label>Address Line1 :<span>*</span></label>
  <input name="address1" id="address1" type="text" size="30" required>
  <label>Address Line2 :</label>
  <input name="address2" id="address2" type="text" size="50">
- <label>Location :<span>*</span></label>
- <select name="gadget_type">
- <option value="">----Select----</options>
- <option value="phone" value="">iPhone or Smartphome </options>
- <option value="tablet" value="">iPad or Tablet </options>
- <option value="laptop" value="">Laptop </options>
- <option value="other" value="">Other </options>
- </select>
+ 
  <label>Pin Code :<span>*</span></label>
  <input name="pin" id="pin" type="text" size="10" required>
- <label>State :<span>*</span></label>
- <input name="state" id="state" type="text" size="30" required>
  <input type="reset" value="Reset" />
- <input name="submit" type="submit" value="Submit" />
+ <input name="submit" type="submit" value="Complete order >> " />
  </form>
  </div> 
  </div>
