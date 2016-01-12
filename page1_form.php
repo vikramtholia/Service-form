@@ -19,7 +19,7 @@ session_start(); // Session starts here.
  }
  ?>
  </span>
- <form action="page1_php.php" method="post">
+ <form action="app/page1_php.php" method="post">
  <label>Full Name :<span>*</span></label>
  <input name="name" type="text" placeholder="Ex-Sachin Sharma" required>
  <label>Mobile :<span>*</span></label>
