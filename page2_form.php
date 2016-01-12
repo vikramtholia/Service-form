@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Checking first page values for empty,If it finds any blank field then redirected to first page.
-if (isset($_POST['name'])){
+/* if (isset($_POST['name'])){
  if (empty($_POST['name'])
  || empty($_POST['email'])
  || empty($_POST['contact'])
@@ -39,17 +39,17 @@ if (isset($_POST['name'])){
  header("location: page1_form.php");//redirecting to first page
  }
 }
-?>
+?> */
 <!DOCTYPE HTML>
 <html>
  <head>
- <title>PHP Multi Page Form</title>
+ <title>Gadget Details</title>
  <link rel="stylesheet" href="style.css" />
  </head>
  <body>
  <div class="container">
  <div class="main">
- <h2>PHP Multi Page Form</h2><hr/>
+ <h2>Fill your gadget details</h2><hr/>
  <span id="error">
 <?php
 // To show error of page 2.
@@ -59,30 +59,37 @@ if (!empty($_SESSION['error_page2'])) {
 }
 ?>
  </span>
- <form action="page3_form.php" method="post">
- <label>Religion :<span>*</span></label>
- <input name="religion" id="religion" type="text" value="" >
- <label>Nationality :<span>*</span></label><br />
- <input name="nationality" id="nationality" type="text" value="" >
- <label>Gender :<span>*</span></label>
- <input type="radio" name="gender" value="male" required>Male
- <input type="radio" name="gender" value="female">Female
- <label>Educational Qualification :<span>*</span></label>
- <select name="qualification">
+ <form action="page2_php.php" method="post">
+ <label>You gadget is :<span>*</span></label>
+ <select name="gadget_type">
  <option value="">----Select----</options>
- <option value="graduation" value="">Graduation </options>
- <option value="postgraduation" value="">Post Graduation </options>
+ <option value="phone" value="">iPhone or Smartphome </options>
+ <option value="tablet" value="">iPad or Tablet </options>
+ <option value="laptop" value="">Laptop </options>
  <option value="other" value="">Other </options>
  </select>
- <label>Job Experience :<span>*</span></label>
- <select name="experience">
+ <label>Make :<span>*</span></label>
+ <input name="make" id="religion" type="text" value="" >
+ <label>Model :<span>*</span></label><br />
+ <input name="model" id="nationality" type="text" value="" >
+ <label>Problem Type:<span>*</span></label>
+ <select name="problem_type">
  <option value="">----Select----</options>
- <option value="fresher" value="">Fresher </options>
- <option value="less" value="">Less Than 2 year </options>
- <option value="more" value="">More Than 2 year</options>
+ <option value="software" value="">Software Problem </options>
+ <option value="screen" value="">Post Graduation </options>
+ <option value="battery" value="">Graduation </options>
+ <option value="camera" value="">Post Graduation </options>
+ <option value="speakers" value="">Graduation </options>
+ <option value="microphone" value="">Post Graduation </options>
+ <option value="update" value="">OS update </options>
+ <option value="locked" value=""Gadget is locked </options>
+ <option value="water" value="">Problem due to water damage </options>
+ <option value="other" value="">Other </options>
  </select>
+ <label>Problem Description (Optional, But provide as much details as you can. It helps us alot. ) :</label>
+ <input name="problem-description" id="religion" type="text" value="" >
  <input type="reset" value="Reset" />
- <input type="submit" value="Next" />
+ <input type="submit" value="Almost done!! Proceed to fill address details >>" />
  </form>
  </div>
  </div>
