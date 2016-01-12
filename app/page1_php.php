@@ -47,5 +47,9 @@ if (isset($_POST['name'])){
  //header("location: page1_form.php");//redirecting to first page
  }
 
+$connection = mysql_connect("localhost", "root", "");
+$db = mysql_select_db("db_name", $connection); // Storing values in database.
+$query = mysql_query("insert into temp_user (name,email,contact) values('$name','$email','$contact')", $connection);
+ 
 header("location: verify_moblie_number_form.php"); //If everything is fine then transfer for mobile number verification
 ?>
