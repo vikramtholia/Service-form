@@ -61,7 +61,7 @@ session_start();
  <label>Address Line2 :</label>
  <input name="address2" id="address2" type="text" size="50">
  
- <label>Pin Code :<span>*</span></label>
+ <label>Pin Code :<span></span></label>
  <input name="pin" id="pin" type="text" size="10" required>
  <input type="reset" value="Reset" />
  <input name="submit" type="submit" value="Complete order >> " />
