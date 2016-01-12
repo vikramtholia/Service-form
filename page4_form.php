@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html>
  <head>
- <title>PHP Multi Page Form</title>
- <link rel="stylesheet" href="style.css" />
+ <title>Order conformed</title>
+ <link rel="stylesheet" href="app/css/style.css" />
  </head>
  <body>
  <div class="container">
  <div class="main">
- <h2>PHP Multi Page Form</h2>
+ <h2>Your order is conformed. Your order id is </h2>
  <?php
  session_start();
  if (isset($_POST['state'])) {
@@ -26,7 +26,7 @@
  extract($_SESSION['post']); // Function to extract array.
  $connection = mysql_connect("localhost", "root", "");
  $db = mysql_select_db("phpmultipage", $connection); // Storing values in database.
- $query = mysql_query("insert into detail (name,email,contact,password,religion,nationality,gender,qualification,experience,address1,address2,city,pin,state) values('$name','$email','$contact','$password','$religion','$nationality','$gender','$qualification','$experience','$address1','$address2','$city','$pin','$state')", $connection);
+ $query = mysql_query("insert into user (name,email,contact,password,religion,nationality,gender,qualification,experience,address1,address2,city,pin,state) values('$name','$email','$contact','$password','$religion','$nationality','$gender','$qualification','$experience','$address1','$address2','$city','$pin','$state')", $connection);
  if ($query) {
  echo '<p><span id="success">Form Submitted successfully..!!</span></p>';
  } else {
