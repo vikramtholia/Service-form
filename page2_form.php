@@ -76,11 +76,11 @@ if (!empty($_SESSION['error_page2'])) {
  <select name="problem_type">
  <option value="">----Select----</options>
  <option value="software" value="">Software Problem </options>
- <option value="screen" value="">Post Graduation </options>
- <option value="battery" value="">Graduation </options>
- <option value="camera" value="">Post Graduation </options>
- <option value="speakers" value="">Graduation </options>
- <option value="microphone" value="">Post Graduation </options>
+ <option value="screen" value="">Sreen damage </options>
+ <option value="battery" value="">Battery </options>
+ <option value="camera" value="">Camera </options>
+ <option value="speakers" value="">Speakers </options>
+ <option value="microphone" value="">Microphone</options>
  <option value="update" value="">OS update </options>
  <option value="locked" value=""Gadget is locked </options>
  <option value="water" value="">Problem due to water damage </options>
