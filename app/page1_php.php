@@ -1,4 +1,14 @@
 <?php
+function getsetVerificationCode() {
+ if (isset($_SESSION['sent_verification_code'])){
+  return $_SESSION['sent_verification_code'];
+ }
+ else {
+  $code = mt_rand(100000,999999);
+  $_SESSION['sent_verification_code'] = $code;
+  return $code;
+ }
+}
 if (isset($_POST['name'])){
  if (empty($_POST['name'])
  || empty($_POST['email'])
