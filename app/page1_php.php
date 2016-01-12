@@ -36,5 +36,6 @@ if (isset($_POST['name'])){
  //if (empty($_SESSION['error_page2'])) {
  //header("location: page1_form.php");//redirecting to first page
  }
-}
+
+header("location: verify_moblie_number_form.php"); //If everything is fine then transfer for mobile number verification
 ?>
