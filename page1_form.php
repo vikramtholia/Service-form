@@ -11,7 +11,7 @@ session_start(); // Session starts here.
  <div class="main">
  <h2>New User - Start here</h2>
  <span id="error">
- <!---- Initializing Session for errors --->
+ <!-- Initializing Session for errors -->
  <?php
  if (!empty($_SESSION['error'])) {
  echo $_SESSION['error'];
