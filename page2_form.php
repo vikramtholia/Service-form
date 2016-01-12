@@ -38,8 +38,8 @@ session_start();
  if (empty($_SESSION['error_page2'])) {
  header("location: page1_form.php");//redirecting to first page
  }
-}
-?> */
+} */
+?> 
 <!DOCTYPE HTML>
 <html>
  <head>
