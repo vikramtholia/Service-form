@@ -69,9 +69,9 @@ if (!empty($_SESSION['error_page2'])) {
  <option value="other" value="">Other </options>
  </select>
  <label>Make :<span>*</span></label>
- <input name="make" id="religion" type="text" value="" >
+ <input name="make" id="religion" type="text" value="" placeholder="Ex-Apple">
  <label>Model :<span>*</span></label><br />
- <input name="model" id="nationality" type="text" value="" >
+ <input name="model" id="nationality" type="text" value="" placeholder="Ex- iPhone 6">
  <label>Problem Type:<span>*</span></label>
  <select name="problem_type">
  <option value="">----Select----</options>
@@ -84,10 +84,11 @@ if (!empty($_SESSION['error_page2'])) {
  <option value="update" value="">OS update </options>
  <option value="locked" value=""Gadget is locked </options>
  <option value="water" value="">Problem due to water damage </options>
+ <option value="slow" value="">Gadget is slow </options>
  <option value="other" value="">Other </options>
  </select>
- <label>Problem Description (Optional, But provide as much details as you can. It helps us alot. ) :</label>
- <input name="problem-description" id="religion" type="text" value="" >
+ <label>Problem Description (Optional, But provide as much details as you can. It helps us a lot. ) :</label>
+ <input name="problem-description" id="religion" type="text" value="" placeholder="Ex- My Phone's screen is broken. So, I want to get it replaced. ">
  <input type="reset" value="Reset" />
  <input type="submit" value="Almost done!! Proceed to fill address details >>" />
  </form>
