@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Checking second page values for empty, If it finds any blank field then redirected to second page.
-if (isset($_POST['gender'])){
+/*if (isset($_POST['gender'])){
  if (empty($_POST['gender'])
  || empty($_POST['nationality'])
  || empty($_POST['religion'])
@@ -19,18 +19,18 @@ if (isset($_POST['gender'])){
  if (empty($_SESSION['error_page3'])) {
  header("location: page1_form.php");// Redirecting to first page.
  }
-}
-?>
+} */
+?> 
 <!DOCTYPE HTML>
 <html>
  <head>
- <title>PHP Multi Page Form</title>
+ <title>Address details</title>
  <link rel="stylesheet" href="style.css" />
  </head>
  <body>
  <div class="container">
  <div class="main">
- <h2>PHP Multi Page Form</h2><hr/>
+ <h2>Fill pick up and drop address details</h2><hr/>
  <span id="error">
  <?php
  if (!empty($_SESSION['error_page3'])) {
@@ -41,12 +41,19 @@ if (isset($_POST['gender'])){
  </span>
  <form action="page4_insertdata.php" method="post">
  <b>Complete Address :</b>
+ <p>As of now we are active in </p>
  <label>Address Line1 :<span>*</span></label>
  <input name="address1" id="address1" type="text" size="30" required>
  <label>Address Line2 :</label>
  <input name="address2" id="address2" type="text" size="50">
- <label>City :<span>*</span></label>
- <input name="city" id="city" type="text" size="25" required>
+ <label>Location :<span>*</span></label>
+ <select name="gadget_type">
+ <option value="">----Select----</options>
+ <option value="phone" value="">iPhone or Smartphome </options>
+ <option value="tablet" value="">iPad or Tablet </options>
+ <option value="laptop" value="">Laptop </options>
+ <option value="other" value="">Other </options>
+ </select>
  <label>Pin Code :<span>*</span></label>
  <input name="pin" id="pin" type="text" size="10" required>
  <label>State :<span>*</span></label>
