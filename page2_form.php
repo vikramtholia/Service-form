@@ -59,7 +59,7 @@ if (!empty($_SESSION['error_page2'])) {
 }
 ?>
  </span>
- <form action="page2_php.php" method="post">
+ <form action="app/page2_php.php" method="post">
  <label>You gadget is :<span>*</span></label>
  <select name="gadget_type">
  <option value="">----Select----</options>
