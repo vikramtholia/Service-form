@@ -1,9 +1,10 @@
 <?php
 session_start(); // Session starts here.
-?><!DOCTYPE HTML>
+?>
+<!DOCTYPE HTML>
 <html>
  <head>
- <title>For New User</title>
+ <title>Mobile Number Verification</title>
  <link rel="stylesheet" href="app/css/style.css" />
  </head>
  <body>
@@ -19,13 +20,14 @@ session_start(); // Session starts here.
  }
  ?>
  </span>
+ <label>Mobile : <?php echo $_POST['contact']; ?></label>
+ <p>If this mobile number is not correct</p><form action="page1_form.php" method="post"><input type="submit" value="Go Back" /></form>
  <form action="app/verify_mobile_number_php.php" method="post">
-  <label>Mobile : <?php echo $_POST['contact']; ?></label>
  <label>Verification Code :<span>*</span></label>
  <input name="verification_code" type="text" placeholder="6-digit number" required>
  <p>We have sent the verification code on your mobile number <?php echo $_POST['contact']; ?> by sms. Please wait for sometime.</p>
  <p>You might not receive sms if DND is active on your number.</p>
- <p>Please contact us if your face any problem, We are waiting to help you.</p>
+ <p>Please contact us at mail if your face any problem, We are waiting to help you.</p>
  //<input type="reset" value="Reset" />
  <input type="submit" value="Verify Mobile Number" />
  </form>
