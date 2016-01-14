@@ -29,8 +29,11 @@ if (isset($_POST['name'])){
  header("location: page1_form.php");
  } else {
  if (($_POST['password']) === ($_POST['confirm'])) {
- foreach ($_POST as $key => $value) {
- $_SESSION['post'][$key] = $value;
+ //foreach ($_POST as $key => $value) {
+ //$_SESSION['post'][$key] = $value;
+ $_SESSION['post']['name'] = $_POST['name'];
+ $_SESSION['post']['contact'] = $_POST['contact'];
+ $_SESSION['post']['password'] = md5($_POST['password']);
  }
  } else {
  $_SESSION['error'] = "Password does not match with Confirm Password.";
@@ -44,7 +47,7 @@ if (isset($_POST['name'])){
  }
 } else {
  //if (empty($_SESSION['error_page2'])) {
- //header("location: page1_form.php");//redirecting to first page
+ header("location: page1_form.php");//redirecting to first page
  }
 
 $connection = mysql_connect("localhost", "root", "");
