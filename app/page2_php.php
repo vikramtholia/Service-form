@@ -14,10 +14,13 @@ session_start();
  foreach ($_POST as $key => $value) {
  $_SESSION['post'][$key] = $value;
  }
+ header("location: page3_form.php");
  }
 } else {
  /* if (empty($_SESSION['error_page3'])) {
  header("location: page1_form.php");// Redirecting to first page. */
+ $_SESSION['error_page2'] = "Mandatory field(s) are missing, Please fill it again";
+ header("location: page2_form.php");  //Just in case isset($_POST['make'] is false. 
  }
 } 
-header("location: page3_form.php");
+
