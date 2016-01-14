@@ -49,7 +49,8 @@ session_start();
  <body>
  <div class="container">
  <div class="main">
- <h2>Fill your gadget details</h2><hr/>
+ <h2>New repair request</h2><hr/>
+ <h3>Fill your gadget details</h3><hr/>
  <span id="error">
 <?php
 // To show error of page 2.
