@@ -9,7 +9,7 @@ if (isset($_POST['verification_code'])){
  $_SESSION['error_verify_mobile_number'] = "Please enter 6 digit verification code.";
  header("location: verify_moblie_number_form.php");
  } else {
- if (($_SESSION['sent_verification_code']) === (md5($_POST['verification_code']))) {
+ if (($_SESSION['sent_verification_code']) === ($_POST['verification_code'])) {
   //$_SESSION['post'][$key] = $value;
  header("location: page2_form.php");
  }
