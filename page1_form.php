@@ -1,6 +1,7 @@
 <?php
 session_start(); // Session starts here.
-?><!DOCTYPE HTML>
+?>
+<!DOCTYPE HTML>
 <html>
  <head>
  <title>For New User</title>
