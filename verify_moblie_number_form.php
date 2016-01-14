@@ -20,15 +20,14 @@ session_start(); // Session starts here.
  }
  ?>
  </span>
- <label>Mobile : <?php echo $_POST['contact']; ?></label>
+ <label>Mobile : <?php echo $_SESSION['contact']; ?></label>
  <p>If this mobile number is not correct</p><form action="page1_form.php" method="post"><input type="submit" value="Go Back" /></form>
  <form action="app/verify_mobile_number_php.php" method="post">
  <label>Verification Code :<span>*</span></label>
  <input name="verification_code" type="text" placeholder="6-digit number" required>
  <p>We have sent the verification code on your mobile number <?php echo $_POST['contact']; ?> by sms. Please wait for sometime.</p>
- <p>You might not receive sms if DND is active on your number.</p>
+ <p>If DND is active on your number then you might not receive sms.</p>
  <p>Please contact us at mail if your face any problem, We are waiting to help you.</p>
- //<input type="reset" value="Reset" />
  <input type="submit" value="Verify Mobile Number" />
  </form>
  </div>
