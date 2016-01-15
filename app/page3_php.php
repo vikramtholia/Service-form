@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    $address2 = test_input($_POST["address2"]);
    
    if($areaErr != "" || $address1Err != "" ) {
-    $_SESSION['error_page2'] = $areaErr + $address1Err;
+    $_SESSION['error_page3'] = $areaErr + $address1Err;
     header("location: page3_form.php");
    }
    
