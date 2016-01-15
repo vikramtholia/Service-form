@@ -50,7 +50,7 @@ if (!empty($_SESSION['error_page2'])) {
  <option value="other" value="">Other </options>
  </select>
  <label>Problem Description (Optional, But provide as much details as you can. It helps us a lot. ) :</label>
- <input name="problem-description" id="religion" type="text" value="" placeholder="Ex- My Phone's screen is broken. So, I want to get it replaced. ">
+ <input name="problem_description" id="religion" type="text" value="" placeholder="Ex- My Phone's screen is broken. So, I want to get it replaced. ">
  <input type="reset" value="Reset" />
  <input type="submit" value="Almost done!! Proceed to fill address details >>" />
  </form>
