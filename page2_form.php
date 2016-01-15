@@ -30,7 +30,7 @@ if (!empty($_SESSION['error_page2'])) {
  <option value="laptop" value="">Laptop </options>
  <option value="other" value="">Other </options>
  </select>
- <label>Make :<span>*</span></label>
+ <label>Make (Example: apple, samsung ,dell etc ) :<span>*</span></label>
  <input name="make" id="religion" type="text" value="" placeholder="Ex-Apple">
  <label>Model :<span>*</span></label><br />
  <input name="model" id="nationality" type="text" value="" placeholder="Ex- iPhone 6">
