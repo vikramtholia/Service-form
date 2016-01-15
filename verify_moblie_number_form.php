@@ -10,7 +10,8 @@ session_start(); // Session starts here.
  <body>
  <div class="container">
  <div class="main">
- <h2>Mobile Number Verification</h2>
+ <h2>Welcome to ComfyTap family!!</h2>
+ <h3>Mobile Number Verification</h3>
  <span id="error">
  <!-- Initializing Session for errors -->
  <?php
