@@ -7,7 +7,7 @@
  <body>
  <div class="container">
  <div class="main">
- <h2>Your order is conformed. Your order id is </h2>
+ <h2>Congratulations, Your order is conformed. Your order id is #orderid</h2>
  <?php
  session_start();
  if (isset($_POST['state'])) {
