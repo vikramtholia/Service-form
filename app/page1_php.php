@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 function getsetVerificationCode() {
  if (isset($_SESSION['sent_verification_code'])){
   return $_SESSION['sent_verification_code'];
