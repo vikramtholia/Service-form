@@ -31,9 +31,9 @@ if (!empty($_SESSION['error_page2'])) {
  <option value="other" value="">Other </options>
  </select>
  <label>Make (Example: apple, samsung ,dell etc ) :<span>*</span></label>
- <input name="make" id="religion" type="text" value="" placeholder="Ex-Apple">
+ <input name="make" id="religion" type="text" value="" placeholder="Ex-Apple"><?php if(isset($_SESSION['post']['make']) echo $_SESSION['post']['make']; ?></input>
  <label>Model :<span>*</span></label><br />
- <input name="model" id="nationality" type="text" value="" placeholder="Ex- iPhone 6">
+ <input name="model" id="nationality" type="text" value="" placeholder="Ex- iPhone 6"><?php if(isset($_SESSION['post']['model']) echo $_SESSION['post']['model']; ?></input>
  <label>Problem Type:<span>*</span></label>
  <select name="problem_type">
  <option value="">----Select----</options>
@@ -50,7 +50,7 @@ if (!empty($_SESSION['error_page2'])) {
  <option value="other" value="">Other </options>
  </select>
  <label>Problem Description (Optional, But provide as much details as you can. It helps us a lot. ) :</label>
- <input name="problem_description" id="religion" type="text" value="" placeholder="Ex- My Phone's screen is broken. So, I want to get it replaced. ">
+ <input name="problem_description" id="religion" type="text" value="" placeholder="Ex- My Phone's screen is broken. So, I want to get it replaced. "><?php if(isset($_SESSION['post']['problem_description']) echo $_SESSION['post']['problem_description']; ?></input>
  <input type="reset" value="Reset" />
  <input type="submit" value="Almost done!! Proceed to fill address details >>" />
  </form>
