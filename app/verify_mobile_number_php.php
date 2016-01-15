@@ -12,7 +12,7 @@ $codeErr = "";
 $code = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
  if (empty($_POST["code"])) {
-     $codeErr = "Verification code cannot be empty.</br>";
+     $codeErr = "Sorry, Verification code cannot be empty.</br>";
    } else if{
      $code = test_input($_POST["code"]);
      if(!preg_match("/^[0-9]{6}$/", $code) {
