@@ -23,6 +23,7 @@ header("location: myorders.php");
 <input name="submit" type="submit" value=" Login ">
 <span><?php echo $error_login_form; ?></span>
 </form>
+<a href="page1_form.php">New user?</a><a href="forgot_form.php">Forgot password?</a>
 </div>
 </div>
 </body>
