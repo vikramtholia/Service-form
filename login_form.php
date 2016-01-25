@@ -1,14 +1,13 @@
 <?php
-include('login.php'); // Includes Login Script
 
-if(isset($_SESSION['login_user'])){
-header("location: profile.php");
+if(isset($_SESSION['login']['name'])){
+header("location: myorders.php");
 }
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login Form in PHP with Session</title>
+<title>Login</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -17,12 +16,12 @@ header("location: profile.php");
 <div id="login">
 <h2>Login Form</h2>
 <form action="" method="post">
-<label>UserName :</label>
-<input id="name" name="username" placeholder="username" type="text">
+<label>Mobile :</label>
+<input id="name" name="contact" placeholder="10 digit mobile number" type="text">
 <label>Password :</label>
 <input id="password" name="password" placeholder="**********" type="password">
 <input name="submit" type="submit" value=" Login ">
-<span><?php echo $error; ?></span>
+<span><?php echo $error_login_form; ?></span>
 </form>
 </div>
 </div>
