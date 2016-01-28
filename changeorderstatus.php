@@ -13,10 +13,27 @@ if(!empty($_SESSION['luserid']) && !empty($_SESSION['luserid']))
   $sql = "SELECT * from order";
   $result = mysqli_query($conn, $sql);
 
-  if (mysqli_num_rows($result) > 0) {
+  if (mysqli_num_rows($result) == 1) {
     // output data of each row
-    while($row = mysqli_fetch_assoc($result)) {
-        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+    $orderStatus = $row["orderstatus"];
+    if($orderStatus == 'requistreceived')
+    {
+      
+    }
+    else if($orderStatus == 'tobepicked')
+    {
+      
+    }
+    else if ($orderStatus == 'picked')
+    {
+      
+    }
+    else if ($orderStatus == 'requistreceived')
+    {
+      
+    }
+    else {
+      die "Invalid order status";
     }
   } 
   else {
@@ -29,3 +46,11 @@ if(!empty($_SESSION['luserid']) && !empty($_SESSION['luserid']))
 else {
   echo "You are not authorized to view this page!!";
 }
+
+
+
+/*
+while($row = mysqli_fetch_assoc($result)) {
+        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+    }
+*/
