@@ -1,0 +1,35 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#status").change(function(){
+	if($("#status").val()=="Picked") {
+		$("#variablearea").html('<input type="text" name="pickupperson"></input><input type="date" name="pickupdate"></input>');
+	}
+	else if ($("#status").val()=="Cancelled") {
+		$("#variablearea").html('<input type="date" name="canceldate"></input><input type="text" name="reasoncancel"></input>');
+	}
+	else if($("#status").val()=="Delivered") {
+		$("#variablearea").html('<input type="text" name="deliveryperson"></input><input type="date" name="deliverydate"></input>');
+	}
+    });
+});
+</script>
+</head>
+<body>
+<noscript>Java Script is disabled on your browser. This website works better with Java Script.</noscript>
+<form method="post" action="changeorderstatus.php">
+<select id="status" name="status">
+<option value="Picked">Picked</option>
+<option value="Cancelled">Cancelled</option>
+<option value="Delivered">Delivered</option>
+</select>
+<div id="variablearea">
+
+</div>
+</form>
+</body>
+</html>
+
+$("#status").val()
